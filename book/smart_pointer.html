@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>基本数据类型 - Rust</title>
+        <title>智能指针 - Rust</title>
 
 
         <!-- Custom HTML head -->
@@ -152,54 +152,43 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="基本数据类型"><a class="header" href="#基本数据类型">基本数据类型</a></h1>
-<h2 id="1整数类型"><a class="header" href="#1整数类型">1.整数类型</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>长度</th><th>有符号整数</th><th>无符号整数</th></tr></thead><tbody>
-<tr><td>8</td><td>i8</td><td>u8</td></tr>
-<tr><td>16</td><td>i16</td><td>u16</td></tr>
-<tr><td>32</td><td>i32</td><td>u32</td></tr>
-<tr><td>64</td><td>i64</td><td>u64</td></tr>
-<tr><td>128</td><td>i128</td><td>u128</td></tr>
-<tr><td>arch</td><td>isize</td><td>usize</td></tr>
-</tbody></table>
-</div>
-<h2 id="2浮点数类型"><a class="header" href="#2浮点数类型">2.浮点数类型</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>长度</th><th>有符号浮点数</th></tr></thead><tbody>
-<tr><td>32</td><td>f32</td></tr>
-<tr><td>64</td><td>f64</td></tr>
-<tr><td>128</td><td>f128</td></tr>
-</tbody></table>
-</div>
-<h2 id="3布尔类型"><a class="header" href="#3布尔类型">3.布尔类型</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>布尔类型</th><th>真</th><th>假</th></tr></thead><tbody>
-<tr><td>bool</td><td>true</td><td>false</td></tr>
-</tbody></table>
-</div>
-<h2 id="4字符类型"><a class="header" href="#4字符类型">4.字符类型</a></h2>
-<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>let a: char = 'a';
-println!("{}", a);
-<span class="boring">}</span></code></pre></pre>
-<h2 id="5字符串切片类型"><a class="header" href="#5字符串切片类型">5.字符串切片类型</a></h2>
-<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>let a: &amp;str = "hello";
-println!("{}", a);
-<span class="boring">}</span></code></pre></pre>
-<h2 id="6字符串类型"><a class="header" href="#6字符串类型">6.字符串类型</a></h2>
-<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>let a: String = String::from("hello");
-println!("{}", a);
-<span class="boring">}</span></code></pre></pre>
+                        <h1 id="智能指针"><a class="header" href="#智能指针">智能指针</a></h1>
+<h2 id="1box"><a class="header" href="#1box">1.Box</a></h2>
+<p>用途: 堆分配数据或递归类型</p>
+<h2 id="2pin"><a class="header" href="#2pin">2.Pin</a></h2>
+<p>用途: 防止内存移动</p>
+<h2 id="3rc"><a class="header" href="#3rc">3.Rc</a></h2>
+<p>用途: 单线程多所有权</p>
+<h2 id="4arc"><a class="header" href="#4arc">4.Arc</a></h2>
+<p>用途: 多线程多所有权</p>
+<h2 id="5refcell"><a class="header" href="#5refcell">5.RefCell</a></h2>
+<p>用途: 单线程内部可变</p>
+<h2 id="6cell"><a class="header" href="#6cell">6.Cell</a></h2>
+<p>用途: 单线程内部简单可变</p>
+<h2 id="7weak"><a class="header" href="#7weak">7.Weak</a></h2>
+<p>用途: 多线程互斥访问</p>
+<h2 id="8rwlock"><a class="header" href="#8rwlock">8.RwLock</a></h2>
+<p>用途: 多线程多读单写访问</p>
+<h2 id="9cow"><a class="header" href="#9cow">9.Cow</a></h2>
+<p>用途: 延迟克隆</p>
+<h2 id="10atomicptr"><a class="header" href="#10atomicptr">10.AtomicPtr</a></h2>
+<p>用途: 原子指针操作</p>
+<h2 id="11manuallydrop"><a class="header" href="#11manuallydrop">11.ManuallyDrop</a></h2>
+<p>用途: 手动释放</p>
+<h2 id="12weak"><a class="header" href="#12weak">12.Weak</a></h2>
+<p>用途: 弱引用避免循环依赖</p>
+<h2 id="13裸指针"><a class="header" href="#13裸指针">13.裸指针</a></h2>
+<p>用途: 裸指针，手动内存管理</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="complx_data_type.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
-                            <a rel="next prefetch" href="complx_data_type.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="data_structure.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -209,8 +198,11 @@ println!("{}", a);
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="complx_data_type.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
-                    <a rel="next prefetch" href="complx_data_type.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="data_structure.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

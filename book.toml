@@ -1,0 +1,6 @@
+[book]
+authors = ["DarcyJason"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Rust"

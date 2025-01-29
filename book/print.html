@@ -226,14 +226,114 @@ println!("{}", a);
 <p>用途: 弱引用避免循环依赖</p>
 <h2 id="13裸指针"><a class="header" href="#13裸指针">13.裸指针</a></h2>
 <p>用途: 裸指针，手动内存管理</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rust标准库"><a class="header" href="#rust标准库">Rust标准库</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rust标准库体系概述"><a class="header" href="#rust标准库体系概述">Rust标准库体系概述</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="数据结构"><a class="header" href="#数据结构">数据结构</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="基础数据结构"><a class="header" href="#基础数据结构">基础数据结构</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="栈"><a class="header" href="#栈">栈</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="队列"><a class="header" href="#队列">队列</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="双端队列"><a class="header" href="#双端队列">双端队列</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="链表"><a class="header" href="#链表">链表</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="链表栈"><a class="header" href="#链表栈">链表栈</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vec"><a class="header" href="#vec">Vec</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="递归"><a class="header" href="#递归">递归</a></h1>
+<h2 id="一递归三定律"><a class="header" href="#一递归三定律">一、递归三定律</a></h2>
+<ol>
+<li>
+<p>递归算法必须具有基本情况.</p>
+</li>
+<li>
+<p>递归算法必须向基本情况靠近.</p>
+</li>
+<li>
+<p>递归算法必须以递归方式调用自身.</p>
+</li>
+</ol>
+<h2 id="二递归与迭代"><a class="header" href="#二递归与迭代">二、递归与迭代</a></h2>
+<p>递归: 用来描述以自相似方法重复事务的过程, 在数学和计算机科学中, 指的是在函数定义中使用函数自身的方法.</p>
+<p>迭代: 重复反馈过程的活动, 每一次迭代的结果将作为下一次迭代的初始值.</p>
+<h2 id="三动态规划"><a class="header" href="#三动态规划">三、动态规划</a></h2>
+<p>动态规划(DP): 实现决策过程最优化的数学方法.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="查找"><a class="header" href="#查找">查找</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="顺序查找"><a class="header" href="#顺序查找">顺序查找</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="二分查找"><a class="header" href="#二分查找">二分查找</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="内插查找"><a class="header" href="#内插查找">内插查找</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="指数查找"><a class="header" href="#指数查找">指数查找</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="哈希查找"><a class="header" href="#哈希查找">哈希查找</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="排序"><a class="header" href="#排序">排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="冒泡排序"><a class="header" href="#冒泡排序">冒泡排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="鸡尾酒排序"><a class="header" href="#鸡尾酒排序">鸡尾酒排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="梳排序"><a class="header" href="#梳排序">梳排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="快速排序"><a class="header" href="#快速排序">快速排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="插入排序"><a class="header" href="#插入排序">插入排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="希尔排序"><a class="header" href="#希尔排序">希尔排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="归并排序"><a class="header" href="#归并排序">归并排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="选择排序"><a class="header" href="#选择排序">选择排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="堆排序"><a class="header" href="#堆排序">堆排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="桶排序"><a class="header" href="#桶排序">桶排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="计数排序"><a class="header" href="#计数排序">计数排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="基数排序"><a class="header" href="#基数排序">基数排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="蒂姆排序"><a class="header" href="#蒂姆排序">蒂姆排序</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="拓扑排序"><a class="header" href="#拓扑排序">拓扑排序</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="树"><a class="header" href="#树">树</a></h1>
+<h2 id="一树的定义"><a class="header" href="#一树的定义">一、树的定义</a></h2>
+<ul>
+<li>
+<p>节点: 节点是树的一个基本结构, 又称为“键”. 节点可以有附加信息, 附加信息被称为“有效载荷”. 虽然有效载荷不是许多树算法的核心, 但在使用了树的应用中, 它们通常是关键信息, 比如树节点上的存储时间、文件名、文件内容等.</p>
+</li>
+<li>
+<p>根节点: 根节点是树中唯一没有传入边的节点, 处于顶层, 所有的节点都可以从根节点找到, 类似于操作系统的“/”或C盘这样的概念.</p>
+</li>
+<li>
+<p>边: 边是树的另一个基本结构, 又称为“分支”. 边连接两个节点以保持它们之间存在的关系. 每个节点(根节点除外)都恰好有一条输入边和若干输出边. 边就是路径, 可通过边找到某个节点的具体位置.</p>
+</li>
+<li>
+<p>路径: 路径是由边连接的节点的有序序列, 其本身并不存在, 而是由逻辑结构得出的一种关联关系. 比如/home/user/files/sort.rs就是一条路径, 其标识了sort.rs这个文件的具体位置.</p>
+</li>
+<li>
+<p>子节点: 子节点是某个节点的下一级节点, 所有的子节点都源自同一上层节点. 比如上面的sort.rs就是files/的子节点. 子节点不唯一, 可以有一个或多个, 也可以没有.</p>
+</li>
+<li>
+<p>父节点: 父节点是所有下级节点的源头, 所有下级节点都源自同一父节点. 比如files/就是sort.rs的父节点. 父节点唯一, 这很好理解.</p>
+</li>
+<li>
+<p>子树: 子树是由父节点及其所有后代节点组成的一组节点和边. 对于树这种递归结构, 从任意节点取出一部分, 结构仍然是树, 这部分取出的内容被成为子树.</p>
+</li>
+<li>
+<p>叶节点: 叶节点是没有子节点的节点, 处于树的最底部.</p>
+</li>
+<li>
+<p>中间节点: 中间节点既有子节点, 也有父节点.</p>
+</li>
+<li>
+<p>节点的层数: 一个节点的层数是指从根节点到这个节点需要经过的分支数. 根节点的层数为0, 在/home/user/files中, files的层数为2. 层数为0不代表没有层数, 而是表示第0层.</p>
+</li>
+<li>
+<p>树的高度: 树的高度等于树中任何节点的最大层数.</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="二叉树"><a class="header" href="#二叉树">二叉树</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="二叉堆"><a class="header" href="#二叉堆">二叉堆</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="二叉查找树"><a class="header" href="#二叉查找树">二叉查找树</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="平衡二叉树"><a class="header" href="#平衡二叉树">平衡二叉树</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="图"><a class="header" href="#图">图</a></h1>
+<h2 id="一图的定义"><a class="header" href="#一图的定义">一、图的定义</a></h2>
+<ul>
+<li>
+<p>顶点: 顶点也就是树中的节点, 是图的元素, 又称为“键”或简称“点”. 一个顶点也可能有额外的信息, 成为有效载荷.</p>
+</li>
+<li>
+<p>边: 边是图的另一个元素. 边连接两个顶点, 以表明点之间的关系. 边可以是单向的或双向的. 如果一个图中的边都是单向的, 则称这个图是有向图.</p>
+</li>
+<li>
+<p>权重: 权重是对边的度量, 旨在用一个数值来表示从一个顶点到另一个顶点的距离、成本、时间、亲密度等.</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="广度优先搜索"><a class="header" href="#广度优先搜索">广度优先搜索</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="深度优先搜索"><a class="header" href="#深度优先搜索">深度优先搜索</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bfs强连通分量算法"><a class="header" href="#bfs强连通分量算法">BFS强连通分量算法</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dfs强连通分量算法"><a class="header" href="#dfs强连通分量算法">DFS强连通分量算法</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dijkstra算法"><a class="header" href="#dijkstra算法">Dijkstra算法</a></h1>
 
                     </main>
 
